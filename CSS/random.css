@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'MomoTrustDisplay' ;
+    src: url('../FONT/MomoTrustDisplay-Regular.ttf');
+}
+/* Reset default browser style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  min-height: 100vh;
+  background-image: url(../IMAGE/art.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Card container */
+.container {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #ffffff76;
+  width: 350px;
+  padding: 35px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.8s ease;
+}
+
+/* Title */
+.container h2 {
+  color: #5b2790;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+/* Random number display */
+#result {
+  font-size: 64px;
+  font-weight: bold;
+  color: #7f14d7;
+  margin: 25px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* CSS */
+.button-29 {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #f15aff 0, #7a00aa 100%);
+  border: 0;
+  border-radius: 20px;
+  box-shadow: rgb(68, 0, 214) 0 2px 4px,rgb(234, 0, 255) 0 7px 13px -3px,rgb(221, 0, 224) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 20px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgb(59, 7, 172) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* Add New CSS Mutiple box */
+/* Boxes wrapper */
+.box-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+/* Each box */
+.box {
+  height: 65px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #ffffff, #dfe4ea);
+  color: rgb(16, 4, 131);
+  font-size: 37px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.box:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
